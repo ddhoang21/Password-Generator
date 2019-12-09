@@ -27,3 +27,35 @@ function generate() {
     var boxUpper = document.getElementById("uppercase");
     var boxNum = document.getElementById("number");
     var boxSym = document.getElementById("symbols");
+
+    var allValues = [];
+
+    if (boxUpper.checked == true) {
+        allValues = allValues.concat(uppers)
+    }
+
+    if (boxLower.checked == true) {
+        allValues = allValues.concat(lowers)
+    }
+
+    if (boxNum.checked == true) {
+        allValues = allValues.concat(digits)
+    }
+    if (boxSym.checked == true) {
+        allValues = allValues.concat(special)
+    }
+    if (boxUpper.checked == false && boxLower.checked == false && boxNum.checked == false && boxSym.checked == false) {
+        alert("You have to check at least one box !")
+    } else {
+        for (i = 0; i <= length; i++) {
+            password = password + allValues[Math.floor(Math.random() * allValues.length)]
+        }
+    }
+
+    if (boxUpper.checked == true || boxLower.checked == true || boxNum.checked == true || boxSym.checked == true) {
+        document.getElementById("box").value = password;
+    }
+
+    return password;
+ 
+}
