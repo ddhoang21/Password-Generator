@@ -23,4 +23,7 @@ function generate() {
 
     var length = document.getElementById("range").value;
     
-    
+    var boxLower = document.getElementById("lowercase");
+    var boxUpper = document.getElementById("uppercase");
+    var boxNum = document.getElementById("number");
+    var boxSym = document.getElementById("symbols");
