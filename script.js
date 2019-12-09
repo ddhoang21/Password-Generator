@@ -59,3 +59,13 @@ function generate() {
     return password;
  
 }
+
+function copyClipboard() {
+
+    document.getElementById("box").select();
+
+    document.execCommand("copy");
+
+    alert("Copied to Clipboard");
+
+}
