@@ -22,20 +22,27 @@
                 <div class="content mt-5">
                     <h3>Generate a Password</h3>
                     <hr class="line mt-4">
-                    Length
-                    <input type="number" min="8" max="128" value="8" id="range">
-                    Lowercase
-                        <input type="checkbox" id="lowercase">
-                    Uppercase
-                        <input type="checkbox" id="uppercase">
-                    Numbers
-                        <input type="checkbox" id="number">
-                    Special Characters
-                        <input type="checkbox" id="symbols">
+                    Choose a length : <input type="number" min="8" max="128" value="8" id="range">
+                    <div class="checkbox mt-3">
+                        <label>Lowercase <input type="checkbox" id="lowercase"></label>
+                    </div>
+                    <div class="checkbox">
+                        <label>Uppercase <input type="checkbox" id="uppercase"></label>
+                    </div>
+                    <div class="checkbox">
+                        <label> Numbers <input type="checkbox" id="number"></label>
+                    </div>
+                    <div class="checkbox">
+                        <label>Special Characters <input type="checkbox" id="symbols"></label>
+                    </div>
                     <br>
-                    <input type="text" id="box">
-                    <button onclick="generate()">Generate Password</button>
-                    <button onclick="copyClipboard()">Copy to Clipboard</button>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="box">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <button onclick="generate()" class="btn btn-success btn-lg">Generate Password</button>
+                        <button onclick="copyClipboard()" class="btn btn-outline-secondary btn-lg">Copy to Clipboard</button>
+                    </div>
                     <div class="length"></div>
                 </div>
             </div>
