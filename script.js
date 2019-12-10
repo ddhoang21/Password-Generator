@@ -30,25 +30,25 @@ function generate() {
 
     var allValues = [];
 
-    if (length < 8 || length > 128) {
-        alert("The password has to be between 8 and 128 characters !")
-    }
-    
-    if (boxUpper.checked == true) {
+    if (boxUpper.checked === true) {
         allValues = allValues.concat(uppers)
     }
 
-    if (boxLower.checked == true) {
+    if (boxLower.checked === true) {
         allValues = allValues.concat(lowers)
     }
 
-    if (boxNum.checked == true) {
+    if (boxNum.checked === true) {
         allValues = allValues.concat(digits)
     }
-    if (boxSym.checked == true) {
+    
+    if (boxSym.checked === true) {
         allValues = allValues.concat(special)
     }
-    if (boxUpper.checked == false && boxLower.checked == false && boxNum.checked == false && boxSym.checked == false) {
+
+    if (length < 8 || length > 128) {
+        alert("The password has to be between 8 and 128 characters !")
+    } else if (boxUpper.checked === false && boxLower.checked === false && boxNum.checked === false && boxSym.checked === false) {
         alert("You have to check at least one box !")
     } else {
         for (i = 0; i <= length; i++) {
@@ -56,7 +56,7 @@ function generate() {
         }
     }
 
-    if (boxUpper.checked == true || boxLower.checked == true || boxNum.checked == true || boxSym.checked == true) {
+    if (boxUpper.checked === true || boxLower.checked === true || boxNum.checked === true || boxSym.checked === true) {
         document.getElementById("box").value = password;
     }
 
