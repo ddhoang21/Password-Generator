@@ -30,6 +30,10 @@ function generate() {
 
     var allValues = [];
 
+    if (length < 8 || length > 128) {
+        alert("The password has to be between 8 and 128 characters !")
+    }
+    
     if (boxUpper.checked == true) {
         allValues = allValues.concat(uppers)
     }
