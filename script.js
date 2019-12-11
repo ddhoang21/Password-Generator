@@ -47,15 +47,15 @@ function generate() {
     }
 
     if (length < 8 || length > 128) {
-        alert("The password has to be between 8 and 128 characters !")
+        alert("The password must be between 8 and 128 characters !")
     } else if (boxUpper.checked === false && boxLower.checked === false && boxNum.checked === false && boxSym.checked === false) {
         alert("You have to check at least one box !")
     } else {
         for (i = 0; i <= length; i++) {
             password = password + allValues[Math.floor(Math.random() * allValues.length)]
         }
-    }
-
+    } 
+    
     if (boxUpper.checked === true || boxLower.checked === true || boxNum.checked === true || boxSym.checked === true) {
         document.getElementById("box").value = password;
     }
