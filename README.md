@@ -12,11 +12,11 @@ This project utilizes Bootstrap Framework CSS in order to make a password genera
 
 The application can be run in the browser and features dynamically updated HTML and CSS powered by JavaScript code.
 
-GitHub URL: https://ddhoang21.github.io/Password-Generator/
-
-GitHub repository: https://github.com/ddhoang21/Password-Generator
-
 ![image](https://user-images.githubusercontent.com/55167673/70583931-145cbe00-1b74-11ea-97e5-33d8447775e7.png)
+
+Deployed App: https://ddhoang21.github.io/Password-Generator/
+
+GitHub URL: https://github.com/ddhoang21/Password-Generator
 
 ## Technologies
 
